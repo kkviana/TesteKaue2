@@ -11,7 +11,7 @@ pipeline {
     stage('Publish') {
         steps {
             echo "Número do Build: ${env.BUILD_NUMBER}"
-			bat 'iscc /dMyAppVersion="1.0" /Qp /O"C:\\Teste" /F"INSTAL LSINCA" "teste.iss"'
+			bat 'iscc /dMyAppVersion="1.0" /Qp /O"C:\\Teste" /F"INSTALL SINCA" "teste.iss"'
 		}
     } 
   }
