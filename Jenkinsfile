@@ -13,7 +13,6 @@ pipeline {
             echo "Número do Build: ${env.BUILD_NUMBER}"
 			bat 'iscc /dMyAppVersion="1.1" /Qp /O"C:\\Teste" /F"INSTALL SINCA" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\testegit\\teste.iss"'
 		}
-    }
-    }   
+    } 
   }
 }
