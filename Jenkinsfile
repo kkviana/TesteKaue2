@@ -11,7 +11,7 @@ pipeline {
     stage('Publish') {
         steps {
             echo "Número do Build: ${env.BUILD_NUMBER}"
-			bat 'iscc /dMyAppVersion="1.0" /Qp /O"C:\\Teste" /F"INSTALLSINCA" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\testegit\\teste.iss"'
+			bat 'iscc /dMyAppVersion="1.0" /Qp /O"C:\\Teste" /F"INSTALLSINCA" "teste.iss"'
 		}
     } 
   }
