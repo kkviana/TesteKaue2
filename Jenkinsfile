@@ -11,7 +11,7 @@ pipeline {
     stage('Publish') {
         steps {
             echo "Número do Build: ${env.BUILD_NUMBER}"
-			bat 'iscc /O"C:\Teste" /F"INSTALL SINCA AUT" "C:\Users\kaue\Documents\GitHub\Instalador.Sinca\sem exe.iss"'
+			bat 'iscc /F"INSTALL SINCA AUT" "C:\Users\kaue\Documents\GitHub\Instalador.Sinca\sem exe.iss"'
 		}
     }
 
