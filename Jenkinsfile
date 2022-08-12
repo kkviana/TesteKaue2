@@ -16,11 +16,5 @@ pipeline {
     }
 
     
-    stage('Clean') {
-		when { equals expected: 'SUCCESS', actual: currentBuild.currentResult }
-        steps {
-            cleanWs()
-        }
-    }
   }
 }
